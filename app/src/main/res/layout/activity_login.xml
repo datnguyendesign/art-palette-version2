@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_registration"
+    tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="center"
+            android:letterSpacing=".1"
+            android:text="Art Palette"
+            android:textColor="@color/green"
+            android:textSize="40sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailEt"
+                android:hint="Email"
+                android:background="@drawable/background_input"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordEt"
+                android:hint="Password"
+                android:background="@drawable/background_input"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginFragmentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_green"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:src="@drawable/facebook"
+                android:elevation="3dp"/>
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:src="@drawable/google"
+                android:elevation="3dp"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:src="@drawable/twitter"
+                android:elevation="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No account yet?"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signupSwitchBtn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_transparent"
+                android:text="Sign up"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

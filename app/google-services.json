@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1077657967507",
+    "project_id": "art-palette-version-2",
+    "storage_bucket": "art-palette-version-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077657967507:android:7641526ecf74bf564da666",
+        "android_client_info": {
+          "package_name": "com.example.artpaletteversion2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrju2DyJdJAFEljLNOgYm64kfwauFqNxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
